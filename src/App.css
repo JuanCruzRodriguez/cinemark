@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body{
+  padding: 1em 3em;
+  background-color: black;
   color: white;
+}    
+
+header nav{
+  display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+header nav a{
+  color: white;
+  text-decoration: none;
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul{
+  list-style: none;
+}
+
+header{
+  display: flex;
+  position: sticky;
+  top: 0%;
+  padding: 0.2% 0;
+  background-color: black;
+  align-items: center;
+}
+
+header ul{
+  display: flex;
+  align-items: center;
+}
+
+header ul li{
+  font-size: 15px;
+  padding-left: 0.5em;
+  padding-right: 2em;
+}
+
+header ul li :hover{
+  color: rgb(170, 170, 170);
+  transition-duration: 500ms;
+}
+
+.logo{
+    margin-top: 0.3em;
+}
+
+.logo:hover{
+  transform: scale(106%);
+  transition-duration: 400ms;
+}
+
+.botonCarrito{
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1.5em;
+  margin-left: 2%;
+  margin-top: 0.2em;
+}
+
+.botonCarrito:hover{
+  color: rgb(170, 170, 170);
+  transition-duration: 500ms;
+  cursor: pointer; 
+}
+
+.botonUser{
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1.5em;
+  margin-left: 6%;
+  margin-top: 2%;
+}
+
+.botonUser:hover{
+  color: rgb(170, 170, 170);
+  transition-duration: 500ms;
+  cursor: pointer; 
 }
