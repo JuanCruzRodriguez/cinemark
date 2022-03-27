@@ -1,5 +1,5 @@
 import logo from '../cinemax.png';
-import CartWidget from './components/CartWidget';
+import CartWidget from '../components/CartWidget';
 
 const NavBar = () => {
     return (
