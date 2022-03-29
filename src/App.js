@@ -1,12 +1,14 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
+import ItemCount from './components/ItemCount'
 
 const App = () => {
   return (
     <>
-    <NavBar></NavBar>
-    <ItemListContainer greeting="Hola mundo"></ItemListContainer>
+    <NavBar />
+    <ItemListContainer greeting="Hola mundo" />
+    <ItemCount />
     </>
   );
 }

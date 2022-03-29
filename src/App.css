@@ -91,3 +91,25 @@ header ul li :hover{
   margin-left: 1.2em;
   bottom: 52%;
 }
+
+.itemCount{
+  display: flex;
+}
+
+.itemCount button{
+  display: flex;
+  margin: 0 1em;
+  padding: 0 1.5em;
+  border-radius: 10px ;
+  background-color: #DC1A28;
+  border: none;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemCount button:hover{
+  background-color: #630d14;
+  transition-duration: 400ms;
+  cursor: pointer;
+}
