@@ -113,3 +113,35 @@ header ul li :hover{
   transition-duration: 400ms;
   cursor: pointer;
 }
+
+.peliculas{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 4em;
+  grid-row-gap: 4em;
+  padding-top: 2em ;
+  padding-bottom: 2em;
+}
+
+.cardPelicula{
+  display: flex;
+  flex-direction: column;
+}
+
+.cardPelicula img:hover{
+  cursor: pointer;
+  transform: scale(104%);
+  transition-duration: 500ms;
+  opacity: 50% black;
+}
+
+.cardPelicula h3{
+  font-size: 1em;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.peliculas .cardPelicula img{
+  height: 350px;
+  border-radius: 10px;
+}

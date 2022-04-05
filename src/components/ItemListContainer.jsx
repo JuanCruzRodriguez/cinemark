@@ -1,6 +1,22 @@
+import { useEffect, useState } from "react";
+import { getData } from "../data";
+import ItemList from "./ItemList"
+
 const ItemListContainer = () => {
+    const [peliculas, setPeliculas] = useState([])
+
+    useEffect(() =>{
+        async function pedirDatos (){
+            let datosLlegando = await getData();
+            setPeliculas(datosLlegando);
+        }
+        pedirDatos();
+    }, [])
+
     return (
-        <p>Hola mundo</p>
+        <>
+            <ItemList productos={peliculas} />
+        </>
     );
 }
 
